@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="#"><img src="images/logo_r.svg" alt="TESLA"></a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#">모델</a>
+                            <ul class="depth2">
+                                <li><a href="#">Model s</a></li>
+                                <li><a href="#">Model 3</a></li>
+                                <li><a href="#">Model x</a></li>
+                                <li><a href="#">Model y</a></li>
+                                <li><a href="#">Cybertruck</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">시승</a>
+                            <ul class="depth2">
+                                <li><a href="#">시승 안내</a></li>
+                                <li><a href="#">시승 신청</a></li>
+                                <li><a href="#">시승 경험담</a></li>
+                                <li><a href="#">시승 이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">충전 및 정비</a>
+                            <ul class="depth2">
+                                <li><a href="#">충전 방법</a></li>
+                                <li><a href="#">충전기 종류</a></li>
+                                <li><a href="#">정비소 찾기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SHOP</a>
+                            <ul class="depth2">
+                                <li><a href="#">충전기</a></li>
+                                <li><a href="#">차량 액세서리</a></li>
+                                <li><a href="#">청소제품</a></li>
+                                <li><a href="#">라이프 스타일</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">고객지원</a>
+                            <ul class="depth2">
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">1:1문의</a></li>
+                                <li><a href="#">자주하는 질문</a></li>
+                            </ul>
+                        </li>
+                    </ul><!-- gnb -->
+                </nav>
+                <ul class="util">
+                    <li class="btn_search_open"> <!-- 클릭 시 header_search 영역 활성화 -->
+                        <a href="#">
+                            <img src="images/util_btn_search_b.png" alt="검색버튼">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/util_btn_login_b.png" alt="로그인버튼">
+                        </a>
+                    </li>
+                    <li class="btn_more_open"> <!-- 클릭 시 header_more 영역 활성화 -->
+                        <a href="#">
+                            <img src="images/util_btn_ham.png" alt="메뉴더보기 버튼">
+                        </a>
+                    </li>
+                </ul><!-- util -->
+            </div><!-- inner -->
+            <div class="depth2_box"></div>
+            <div class="header_search"> <!-- 검색영역. btn_search_open 클릭시 활성화 -->
+                <form>
+                    <fieldset>
+                        <legend>검색영역</legend>
+                        <div class="search">
+                            <input type="search" placeholder="무엇을 찾으시나요?">
+                            <input type="submit" value="검색">
+                        </div>
+                        <div class="search_txt">
+                            <p>&#35; 테슬라 S</p>
+                            <p>&#35; 테슬라 액세서리</p>
+                            <p>&#35; 이벤트</p>
+                        </div>
+                        <div class="search_close">
+                            <img src="images/util_btn_close_b.png" alt="검색창 닫기">
+                        </div>
+                    </fieldset>
+                </form>
+            </div><!-- header_search -->
+            <div class="header_more"> <!-- 더보기 영역. btn_more_open 클릭시 활성화 -->
+                <div class="inner">
+                    <h1><a href="#"><img src="images/logo_w.svg" alt="TESLA"></a></h1>
+                    <nav>
+                        <ul class="more_gnb">
+                            <li><a href="#">모델</a>
+                                <ul class="more_depth2">
+                                    <li><a href="#">Model s</a></li>
+                                    <li><a href="#">Model 3</a></li>
+                                    <li><a href="#">Model x</a></li>
+                                    <li><a href="#">Model y</a></li>
+                                    <li><a href="#">Cybertruck</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">시승</a>
+                                <ul class="more_depth2">
+                                    <li><a href="#">시승 안내</a></li>
+                                    <li><a href="#">시승 신청</a></li>
+                                    <li><a href="#">시승 경험담</a></li>
+                                    <li><a href="#">시승 이벤트</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">충전 및 정비</a>
+                                <ul class="more_depth2">
+                                    <li><a href="#">충전 방법</a></li>
+                                    <li><a href="#">충전기 종류</a></li>
+                                    <li><a href="#">정비소 찾기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">SHOP</a>
+                                <ul class="more_depth2">
+                                    <li><a href="#">충전기</a></li>
+                                    <li><a href="#">차량 액세서리</a></li>
+                                    <li><a href="#">청소제품</a></li>
+                                    <li><a href="#">라이프 스타일</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">고객지원</a>
+                                <ul class="more_depth2">
+                                    <li><a href="#">고객센터</a></li>
+                                    <li><a href="#">1:1문의</a></li>
+                                    <li><a href="#">자주하는 질문</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="more_util">
+                        <li class="btn_more_search_open"><!-- 클릭 시 header_more_search 영역 활성화 -->
+                            <a href="#">
+                                <img src="images/util_btn_search_w.png" alt="검색버튼">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/util_btn_login_w.png" alt="로그인버튼">
+                            </a>
+                        </li>
+                        <li class="btn_more_close">
+                            <a href="#">
+                                <img src="images/util_btn_close_w.png" alt="메뉴더보기 버튼">
+                            </a>
+                        </li>
+                    </ul><!-- more_util -->
+                </div><!-- inner -->
+            </div><!-- header_more --> <!-- 더보기 영역 종료 -->
+            <div class="header_more_search"> <!-- 더보기 검색 영역. btn_more_search_open 클릭시 활성화 -->
+                <form>
+                    <fieldset>
+                        <legend>검색영역</legend>
+                        <div class="more_search">
+                            <input type="search" placeholder="무엇을 찾으시나요?">
+                            <input type="submit" value="검색">
+                        </div>
+                        <div class="more_search_txt">
+                            <p>&#35; 테슬라 S</p>
+                            <p>&#35; 테슬라 액세서리</p>
+                            <p>&#35; 이벤트</p>
+                        </div>
+                        <div class="btn_more_search_close">
+                            <img src="images/util_btn_close_w.png" alt="검색창 닫기">
+                        </div>
+                    </fieldset>
+                </form>
+            </div><!-- header_more_search --> <!-- 더보기 검색 영역 종료 -->
+        </header>
+
+        <main id="main">
+            <section id="main_visual">
+                <video src="images/mv_teslavideo.mp4" width="1920" height="800" autoplay muted loop playsinline></video>
+            </section><!-- main_visual -->
+            <section id="model">
+                <h2>모델 소개</h2>
+                <div class="inner">
+                    <div class="swiper model_txt">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <h3>Model S</h3>
+                                <div class="model_info">
+                                    <dl>
+                                        <dt>474km</dt>
+                                        <dd>주행 가능 거리</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>2.1s</dt>
+                                        <dd>0&#45;100km&#47;h</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>280km&#47;<span>h</span></dt>
+                                        <dd>최고속도</dd>
+                                    </dl>
+                                </div>
+                                <a href="#">자세히보기</a>
+                                <p>표시된 제원은 <span>Model S Plaid</span> 수치 기준입니다. <br>
+                                    성능 및 주행 가능 거리는 각 모델마다 상이할 수 있습니다.</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <h3>Model 3</h3>
+                                <div class="model_info">
+                                    <dl>
+                                        <dt>488km</dt>
+                                        <dd>주행 가능 거리</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>4.4s</dt>
+                                        <dd>0&#45;100km&#47;h</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>233km&#47;<span>h</span></dt>
+                                        <dd>최고속도</dd>
+                                    </dl>
+                                </div>
+                                <a href="#">자세히보기</a>
+                                <p>표시된 제원은 <span>Model 3 Long Range</span> 수치 기준입니다. <br>
+                                    성능 및 주행 가능 거리는 각 모델마다 상이할 수 있습니다.</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <h3>Model X</h3>
+                                <div class="model_info">
+                                    <dl>
+                                        <dt>439km</dt>
+                                        <dd>주행 가능 거리</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>2.6s</dt>
+                                        <dd>0&#45;100km&#47;h</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>240km&#47;<span>h</span></dt>
+                                        <dd>최고속도</dd>
+                                    </dl>
+                                </div>
+                                <a href="#">자세히보기</a>
+                                <p>표시된 제원은 <span>Model X Plaid</span> 수치 기준입니다. <br>
+                                    성능 및 주행 가능 거리는 각 모델마다 상이할 수 있습니다.</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <h3>Model Y</h3>
+                                <div class="model_info">
+                                    <dl>
+                                        <dt>468km</dt>
+                                        <dd>주행 가능 거리</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>5.0s</dt>
+                                        <dd>0&#45;100km&#47;h</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>217km&#47;<span>h</span></dt>
+                                        <dd>최고속도</dd>
+                                    </dl>
+                                </div>
+                                <a href="#">자세히보기</a>
+                                <p>표시된 제원은 <span>Model Y Long Range</span> 수치 기준입니다. <br>
+                                    성능 및 주행 가능 거리는 각 모델마다 상이할 수 있습니다.</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <h3>Cybertruck</h3>
+                                <div class="model_info">
+                                    <dl>
+                                        <dt>502km</dt>
+                                        <dd>주행 가능 거리</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>2.6s</dt>
+                                        <dd>0&#45;100km&#47;h</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>210km&#47;<span>h</span></dt>
+                                        <dd>최고속도</dd>
+                                    </dl>
+                                </div>
+                                <a href="#">자세히보기</a>
+                                <p>표시된 제원은 <span>Cybertruck 사이버비스트</span> 수치 기준입니다. <br>
+                                    성능 및 주행 가능 거리는 각 모델마다 상이할 수 있습니다.</p>
+                            </li>
+                        </ul><!-- wrapper -->
+                    </div><!-- model_txt swiper -->
+                    <div class="swiper model_img">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <h3>Model S</h3>
+                                <img src="images/Model_s.jpg" alt="model s 사진">
+                            </li>
+                            <li class="swiper-slide">
+                                <h3>Model 3</h3>
+                                <img src="images/Model_3.jpg" alt="model 3 사진">
+                            </li>
+                            <li class="swiper-slide">
+                                <h3>Model X</h3>
+                                <img src="images/Model_x.jpg" alt="model x 사진">
+                            </li>
+                            <li class="swiper-slide">
+                                <h3><span>Model Y</span></h3>
+                                <img src="images/Model_y.jpg" alt="model y 사진">
+                            </li>
+                            <li class="swiper-slide">
+                                <h3><span>Cybertruck</span></h3>
+                                <img src="images/Model_ct.jpg" alt="cybertruck 사진">
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+            </section><!-- model -->
+            <section id="guide">
+                <div class="guide_img">
+                    <img src="images/guide1.jpg" alt="">
+                </div>
+                <div class="inner">
+                    <div class="guide_txt">
+                        <h3>테슬라 구매의 첫 걸음, 테슬라 전기차 시승</h3>
+                        <a href="#">테슬라 시승안내</a>
+                    </div>
+                </div><!-- inner -->
+            </section><!-- guide -->
+            <section id="experience">
+                <div class="inner">
+                    <h2>고객 경험담</h2>
+                    <p>테슬라 고객의 이야기를 들려드립니다.</p>
+                </div><!-- inner -->
+                <div class="swiper ex">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="ex_img">
+                                    <img src="images/ex_1.jpg" alt="사용자 경험1">
+                                </div>
+                                <dl class="ex_txt">
+                                    <dt>가속력, 디자인, 기능까지.. <br>
+                                        테슬라는 저가 원한것을 모두 갖춘 차입니다.</dt>
+                                    <dd>2024-04-10</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="ex_img">
+                                    <img src="images/ex_2.jpg" alt="사용자 경험2">
+                                </div>
+                                <dl class="ex_txt">
+                                    <dt>테슬라 다인승 전기차덕에 <br>
+                                        가족들과 더 많은 시간을 보낼 수 있게 되었어요.</dt>
+                                    <dd>2024-03-29</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="ex_img">
+                                    <img src="images/ex_3.jpg" alt="사용자 경험3">
+                                </div>
+                                <dl class="ex_txt">
+                                    <dt>테슬라 전기차를 타고 떠나는 <br>
+                                        나만의 여행</dt>
+                                    <dd>2024-03-04</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="ex_img">
+                                    <img src="images/ex_4.jpg" alt="사용자 경험4">
+                                </div>
+                                <dl class="ex_txt">
+                                    <dt>멋에 반하다 <br>
+                                        테슬라 model s</dt>
+                                    <dd>2024-02-27</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="ex_img">
+                                    <img src="images/ex_5.jpg" alt="사용자 경험5">
+                                </div>
+                                <dl class="ex_txt">
+                                    <dt>model s를 사고 결혼한지 39년만에 <br>
+                                        새로운 신혼 생활을 경험했네요.</dt>
+                                    <dd>2024-02-12</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="ex_img">
+                                    <img src="images/ex_6.jpg" alt="테슬라 로고 이미지">
+                                </div>
+                                <dl class="ex_txt">
+                                    <dt>여러분들의 이야기를 기다리고 있습니다!</dt>
+                                    <dd><span>이야기 적고 선물 받기</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-scrollbar"></div>
+                </div><!-- swiper ex -->
+            </section><!-- experience -->
+            <section id="charge">
+                <h2>정비 및 충전</h2>
+                <div class="back">
+                    <div class="inner">
+                        <div class="charge_left">
+                            <p>거주지 주변에 있는<br>
+                                가까운 정비소를 찾아보세요</p>
+                            <div class="garage_search">
+                                <form>
+                                    <fieldset>
+                                        <legend>검색영역</legend>
+                                        <div>
+                                            <input type="search" placeholder="구 혹은 동을 입력하세요">
+                                            <input type="submit" value="검색">
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div><!-- garage_search -->
+                        </div><!-- charge_left -->
+                        <ul class="charge_right">
+                            <li class="charge_right_img">
+                                <img src="images/charge_charge.png" alt="충전기 사진">
+                            </li>
+                            <li class="charge_right_txt">
+                                <dl>
+                                    <dt>충전</dt>
+                                    <dd>집이나 이동 경로중에 있는 충전소에서 충전하세요. <br>
+                                        전기를 사용할 수 있는 모든 곳에서 빠르고 편리하게 충전할 수 있습니다.</dd>
+                                </dl>
+                            </li>
+                            <li class="charge_right_img">
+                                <img src="images/charge_home.png" alt="월 커넥터 사진">
+                            </li>
+                            <li class="charge_right_txt">
+                                <dl>
+                                    <dt>홈차징</dt>
+                                    <dd>월 커넥터는 자택에서 충전하는 가장 빠른 방법입니다. <br>
+                                        집에서도 편하게 충전 해보세요.</dd>
+                                </dl>
+                            </li>
+                            <li class="charge_right_img">
+                                <img src="images/charge_super.png" alt="수퍼차지 사진">
+                            </li>
+                            <li class="charge_right_txt">
+                                <dl>
+                                    <dt>수퍼차저</dt>
+                                    <dd>50,000개 이상의 수퍼차저를 보유한 Tesla는<br>
+                                        전 세계 최대 규모의 급속 충전 기기를 소유 및 운영하고 있습니다.</dd>
+                                </dl>
+                            </li>
+                        </ul><!-- charge_right -->
+                    </div><!-- inner -->
+                </div><!-- back -->
+            </section><!-- charge -->
+            <section id="shop">
+                <h2>Shop</h2>
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <div class="shop_img">
+                                <img src="images/shop1.jpg" alt="월 커넥터 사진">
+                            </div>
+                            <div class="shop_txt">
+                                <h4>충전</h4>
+                                <p>테슬라 충전 제품을 구매하여 <br>
+                                    집에서, 또는 운전중에 <br>
+                                    편하게 충전하세요
+                                </p>
+                                <a href="#">다른 물건 보기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop_img">
+                                <img src="images/shop2.jpg" alt="타이어 사진">
+                            </div>
+                            <div class="shop_txt">
+                                <h4>차량 액세서리</h4>
+                                <p>매트, 머드플랩 등<br>
+                                    차량용 악세서리로<br>
+                                    자동차를 꾸며보세요
+                                </p>
+                                <a href="#">다른 물건 보기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop_img">
+                                <img src="images/shop3.jpg" alt="테슬라 모자 사진">
+                            </div>
+                            <div class="shop_txt">
+                                <h4>의류</h4>
+                                <p>테슬라에서 만든<br>
+                                    고급지고 편한 의류들을<br>
+                                    만나보세요
+                                </p>
+                                <a href="#">다른 물건 보기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="shop_img">
+                                <img src="images/shop4.jpg" alt="백팩 사진">
+                            </div>
+                            <div class="shop_txt">
+                                <h4>라이프 스타일</h4>
+                                <p>백팩, 텀블러 등<br>
+                                    일상생활에 필요한 <br>
+                                    물건을 구매해보세요
+                                </p>
+                                <a href="#">다른 물건 보기</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- inner -->
+            </section><!-- shop -->
+        </main>
+        <footer id="footer">
+            <div class="footer_logo">
+                <img src="images/logo_w.svg" alt="TESLA_wight">
+            </div>
+            <address>테슬라코리아 유한회사 | 사업자등록번호 : 524-88-00237 | 통신판매업신고: 제2016-서울강남-02964호 <br>
+                주소 : 서울특별시 강남구 테헤란로 134, 14층 | 대표전화 : 080-617-1388</address>
+            <div class="copy">
+                <a href="#">Tesla © 2024</a>
+            </div>
+            <ul class="footer_sns">
+                <li><img src="images/sns_facebook.png" alt="페이스북 바로가기"><a href="#"></a></img></li>
+                <li><img src="images/sns_insta.png" alt="인스타 바로가기"><a href="#"></a></img></li>
+                <li><img src="images/sns_youtube.png" alt="유튜브 바로가기"><a href="#"></a></img></li>
+            </ul>
+            <ul class="footer_link">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">영상정보처리기기방침</a></li>
+            </ul>
+        </footer>
+    </div>
+    <div class="sidebar_wrap"> <!-- 우측 사이드바 -->
+        <ul class="sidebar">
+            <li class="btn_gotop">Top</li>
+            <li class="btn_goinfo">시승안내</li>
+            <li class="btn_goapply"><a href="#">시승신청</a></li>
+            <li class="btn_goinquiry"><a href="#">1:1문의</a></li>
+            <li class="btn_goquestion"><a href="#">자주묻는질문</a></li>
+            <li class="btn_gobottom">Bottom</li>
+        </ul>
+    </div>
+</body>
+
+</html>
